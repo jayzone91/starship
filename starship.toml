@@ -27,7 +27,7 @@ $docker_context\
 [](#1C3A5E)$time[ ](#1C3A5E)$cmd_duration
 [└─>](bold green) """
 
-continuation_prompt =  '▶▶ '
+continuation_prompt = '▶▶ '
 
 [character]
 success_symbol = "🚀 "
@@ -35,9 +35,9 @@ error_symbol = "🔥 "
 
 [time]
 disabled = false
-time_format = "%r" # Hour:Minute Format
+time_format = "%r"                                      # Hour:Minute Format
 style = "bg:#1d2230"
-format  = "[[ 󱑍 $time ](bg:#1c3a5e fg:#8dfbd2)]($style)"
+format = "[[ 󱑍 $time ](bg:#1c3a5e fg:#8dfbd2)]($style)"
 
 [cmd_duration]
 format = "last command: [$duration](bold yellow)"
@@ -105,12 +105,12 @@ format = "at [$path]($style)[$read_only]($read_only_style) "
 
 [git_branch]
 symbol = " "
-format = "via [$symbol$branch]($style)"
+format = "via [$symbol$branch]($style) "
 truncation_symbol = '…/'
 style = "bold green"
 
 [git_status]
-format = "[$all_status$ahead_behind]($style)"
+format = "[$all_status$ahead_behind]($style) "
 style = "bold green"
 conflicted = '🏳'
 up_to_date = ''
@@ -154,7 +154,7 @@ symbol = " "
 [memory_usage]
 symbol = "󰍛 "
 disabled = true
-style='bold dimmed white'
+style = 'bold dimmed white'
 threshold = 1
 format = "$symbol [${ram}(|${swap})]($style) "
 
